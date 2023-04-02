@@ -1,0 +1,45 @@
+@keyframes banner-image-animate {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes menu-open-animate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-btn {
+    padding: 6px;
+    background-color: #48a5ba;
+    border-radius: 4px;
+    color: white;
+    transition: all;
+    transition-duration: 500ms;
+}
+.main-btn:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.banner-image {
+    animation-name: banner-image-animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease-in-out;
+}
+.menu-animate {
+    animation: menu-open-animate;
+    animation-duration: 0.8s;
+    transition: ease-in;
+    animation-iteration-count: 1;
+}
